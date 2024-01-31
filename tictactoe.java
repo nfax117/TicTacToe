@@ -2,10 +2,6 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-// TODO:
-// Highlight winning 3 in a row with yellow
-
-
 
 class TicTacToeGame extends Frame implements ActionListener {
 	
@@ -63,7 +59,7 @@ class TicTacToeGame extends Frame implements ActionListener {
 		// Add "New Game" button that starts new game
 		b1 = new Button("New Game");
 		b1.setSize(150,40);
-		b1.setLocation(325,500);
+		b1.setLocation(325,420);
 		b1.setFont(new Font("",Font.BOLD,20));
 		b1.setForeground(Color.black);
 		
@@ -76,7 +72,7 @@ class TicTacToeGame extends Frame implements ActionListener {
 		resultLabel.setLocation(260, 350);
 		resultLabel.setFont(new Font("", Font.BOLD, 20));
 		resultLabel.setForeground(Color.BLACK);
-		resultLabel.setText("New game: Player O Starts");
+		resultLabel.setText("New game: Player 1 (O) Starts");
 		add(resultLabel);
 
 		// Add label that states "Wins"
@@ -349,10 +345,7 @@ class TicTacToeGame extends Frame implements ActionListener {
 				winLabel.setForeground(Color.RED);
 				add(winLabel);
 				l += 50;
-			}
-
-			//set variable here to remember which buttons to change color of 
-			
+			}			
 			
 			return true;
 		}
